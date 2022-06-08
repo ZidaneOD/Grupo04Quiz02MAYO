@@ -24,4 +24,33 @@ public class CLCliente {
         }
         return aDataResponse;
     }
+    
+    public Object Impuesto(double ImpPedido) {
+        double imp18
+                = Math.round((ImpPedido * 0.18) * 100.0) / 100.0;
+        return imp18;
+    }
+
+    public Object TotalProy(double imp18, double ImpPedido) {
+        double total = imp18
+                + ImpPedido;
+        return total;
+    }
+
+    public Object Retenc20(double imp18) {
+        double rt20 = Math.round((imp18 * 0.2) * 100.0) / 100.0;
+        return rt20;
+    }
+
+    public Object Retenc30(double imp18) {
+        double rt30 = Math.round((imp18 * 0.3) * 100.0) / 100.0;
+        return rt30;
+
+    }
+
+    public Object Retenc40(double imp18) {
+        double rt40 = Math.round((imp18 * 0.4) * 100.0) / 100.0;
+        return rt40;
+
+    }
 }
