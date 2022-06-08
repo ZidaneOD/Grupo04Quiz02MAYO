@@ -13,9 +13,9 @@ import javax.swing.JOptionPane;
  */
 public class JFrameLogin extends javax.swing.JFrame {
 
-    JPanelMostrarInformacion mosIn;
+    JFrameMostrarInformacion mosIn;
     public JFrameLogin() {
-        mosIn= new JPanelMostrarInformacion();
+        mosIn= new JFrameMostrarInformacion();
         initComponents();
         this.setLocationRelativeTo(null);
     }
