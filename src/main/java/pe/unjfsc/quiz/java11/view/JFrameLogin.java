@@ -13,10 +13,9 @@ import javax.swing.JOptionPane;
  */
 public class JFrameLogin extends javax.swing.JFrame {
 
-    /**
-     * Creates new form JFrameLogin
-     */
+    JFrameMostrarInformacion mosIn;
     public JFrameLogin() {
+        mosIn= new JFrameMostrarInformacion();
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -146,8 +145,8 @@ public class JFrameLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_txtsuarioFocusLost
 
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
-        String user = "Grupo01";
-        String contraseña = "grupo01";
+        String user = "Grupo04";
+        String contraseña = "grupo04";
 
         String a = txtsuario.getText();
         String b = txtContra.getText();
@@ -158,11 +157,8 @@ public class JFrameLogin extends javax.swing.JFrame {
 
         else if (a.equals(user) && b.equals(contraseña)) {
             this.setVisible(false);
-            /* s.setVisible(true);
-            s.panelNuevo.setVisible(true);
-            s.panelVer.setVisible(false);
-            s.panelVertodo.setVisible(false);
-            s.panelEliminador.setVisible(false);*/
+            mosIn.setVisible(true);
+
 
         } else {
             txtsuario.setText("");
