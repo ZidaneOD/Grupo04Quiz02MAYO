@@ -13,9 +13,9 @@ import javax.swing.JOptionPane;
  */
 public class JFrameLogin extends javax.swing.JFrame {
 
-    JFrameMostrarInformacion mosIn;
+    JPanelMostrarInformacion mosIn;
     public JFrameLogin() {
-        mosIn= new JFrameMostrarInformacion();
+        mosIn= new JPanelMostrarInformacion();
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -125,7 +125,7 @@ public class JFrameLogin extends javax.swing.JFrame {
         });
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 20, 40, 40));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 650, 460));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 460));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
